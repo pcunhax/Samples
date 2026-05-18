@@ -181,8 +181,8 @@
           <div class="label">Controls</div>
           <ul>
             <li>← / → move</li>
-            <li>↑ or X rotate clockwise</li>
-            <li>Z rotate counter-clockwise</li>
+            <li>↑ or X rotate counter-clockwise</li>
+            <li>Z rotate clockwise</li>
             <li>↓ soft drop</li>
             <li>Space hard drop</li>
             <li>P pause</li>
@@ -706,10 +706,10 @@
           break;
         case "ArrowUp":
         case "KeyX":
-          tryRotate(1);
+          tryRotate(-1);
           break;
         case "KeyZ":
-          tryRotate(-1);
+          tryRotate(1);
           break;
         case "Space":
           hardDrop();
